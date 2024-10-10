@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <title>
+            calculator
+        </title>
+    </head>
+<style>
+*{
+ padding:0px;
+ margin:0px;
+ box-sizing: border-box;
+}
+.difrin{
+    display:flex;
+}
+.m,.d{
+    flex:33%;
+}
+.a1{
+    border:6px solid rgb(243, 0, 251);
+padding: 10px;
+background-color: rgba(4, 2, 78, 0.951);
+border-radius: 4%;
+}
+.a2{
+    background-color: rgba(42, 3, 127, 0.951);
+border-radius: 2%;
+    border:3px solid rgb(255, 234, 0);
+  width:460px;
+  height: 60px;
+  font-size: 30px;
+  padding:15px ;
+  background-color: rgb(243, 255, 5);
+}
+.a3,.a4,.a5,.a6{
+    border-radius: 3%;
+    border:2px solid rgb(241, 255, 41);
+    width:108px;
+    height:40px;
+    margin-top:12px;
+    margin-right:10px;
+    background-color: rgba(246, 204, 232, 0.698);
+}
+.onebox{
+display:flex;
+}
+h1{
+    text-align: center;
+}
+.calculator{
+    margin-top: 100px;
+}
+
+</style>
+
+    <body>
+
+<div class="calculator"> 
+
+        <div class="difrin"> 
+
+        <div class="m">
+          
+        </div>
+<div class="a1">
+<div class="a2" id="b1"></div>
+
+<div class="onebox"> 
+<div class="a3"> <h1  onclick="fun()"  >8</h1> </div><div class="a4"> <h1 onclick="fun1()">7</h1>  </div><div class="a5"> <h1 onclick="fun2()">9</h1>  </div> <div class="a6"> <h1 onclick="fun3()">/</h1> </h1></div>
+
+</div>
+
+
+<div class="onebox"> 
+    <div class="a3"> <h1 onclick="fun4()">6</h1> </div><div class="a4"> <h1 onclick="fun5()">4</h1>  </div><div class="a5"> <h1 onclick="fun6()">5</h1>  </div> <div class="a6"> <h1 onclick="fun7()">+</h1> </div>
+    
+    </div>
+
+    <div class="onebox"> 
+        <div class="a3"> <h1 onclick="fun8()" >1</h1> </div><div class="a4"> <h1 onclick="fun9()">2</h1>  </div><div class="a5"> <h1 onclick="fun10()">3</h1>  </div> <div class="a6"> <h1 onclick="fun11()">-</h1> </div>
+        
+        </div>
+        <div class="onebox"> 
+            <div class="a3"> <h1 onclick="fun12()">0</h1> </div><div class="a4"> <h1 onclick="fun13()">.</h1>  </div><div class="a5"> <h1 onclick="fun14()">*</h1>  </div> <div class="a6"> <h1 onclick="fun15()" >=</h1> </div>
+            
+            </div>
+
+</div>
+
+<div class="d"></div>
+
+
+</div>
+
+</div>
+
+<script>
+    
+    x="";
+    console.log(x)
+    function fun(){
+        x=x+"8"
+        console.log(x)
+        document.getElementById("b1").innerHTML=x
+        }
+    function fun1(){
+
+         x=x+"7"
+         console.log(x)
+        document.getElementById("b1").innerHTML=x
+        }
+    function fun2(){
+        x=x+"9"
+        console.log(x)
+
+         document.getElementById("b1").innerHTML=x
+        }
+        function fun3(){
+            x=x+"/"
+            console.log(x)
+         document.getElementById("b1").innerHTML=x
+        }
+
+        function fun4(){
+            x=x+"6"
+            console.log(x)
+        document.getElementById("b1").innerHTML=x
+        }
+    function fun5(){
+        x=x+"4"
+        console.log(x)
+        document.getElementById("b1").innerHTML=x
+        }
+    function fun6(){
+        x=x+"5"
+        console.log(x)
+         document.getElementById("b1").innerHTML=x
+        }
+        function fun7(){
+            x=x+"+"
+            console.log(x)
+         document.getElementById("b1").innerHTML=x
+        }
+
+function fun8(){
+    x=x+"1"
+    console.log(x)
+        document.getElementById("b1").innerHTML=x
+        }
+    function fun9(){
+        x=x+"2"
+        console.log(x)
+        document.getElementById("b1").innerHTML=x
+        }
+    function fun10(){
+        x=x+"3"
+        console.log(x)
+         document.getElementById("b1").innerHTML=x
+        }
+        function fun11(){
+            x=x+"-"
+            console.log(x)
+         document.getElementById("b1").innerHTML=x
+        }
+        function fun12(){
+            x=x+"0"
+            console.log(x)
+        document.getElementById("b1").innerHTML=x
+        }
+    function fun13(){
+        x=x+"."
+        console.log(x)
+        document.getElementById("b1").innerHTML=x
+        }
+    function fun14(){
+        x=x+"*"
+        console.log(x)
+         document.getElementById("b1").innerHTML=x
+        }
+        function fun15(){
+            x=eval(x)
+            console.log(x)
+         document.getElementById("b1").innerHTML=x
+        }
+</script>
+    </body>
+</html>
